@@ -1,0 +1,9 @@
+.sidebarContainer{
+    width: 25%;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+    /* margin-top: 10px; */
+    background: cornflowerblue;
+    
+}
