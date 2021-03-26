@@ -12,7 +12,7 @@ import './style.css'
 const Body = (props) => {
     return (
         <div className="bodyContainer" >
-            <Posts></Posts>
+            
             <Sidebar></Sidebar>
         </div>
     )
