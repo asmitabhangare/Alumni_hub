@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import ReactDOM from 'react-dom';
+import { CSSTransition } from 'react-transition-group';
 import './style.css';
 import Isalogo from '../../assets/images/isaLogo.png';
 import Search from '../../assets/images/searchIcon.png';
@@ -7,9 +9,13 @@ import { deepOrange, deepPurple } from '@material-ui/core/colors';
 import Profile from '../../assets/images/profilePic.jpg';
 import { Height } from '@material-ui/icons';
 import { Box } from '@material-ui/core';
-import Bell from '@material-ui/icons/NotificationImportantRounded';
+import Bell from '@material-ui/icons/NotificationsActiveOutlined';
 import Badge from '@material-ui/core/Badge';
 import CreateIcon from '@material-ui/icons/Create';
+import HomeIcon from '@material-ui/icons/Home';
+import PersonIcon from '@material-ui/icons/Person';
+import SettingsIcon from '@material-ui/icons/Settings';
+import Logout from '@material-ui/icons/ExitToApp';
 
 /**
 * @author
@@ -44,6 +50,9 @@ const Header = (props) => {
     // })
 
 
+
+
+
     return (
         <nav className="navbar">
             <div className="isaLogo">
@@ -60,12 +69,19 @@ const Header = (props) => {
             </a>
             <a href="#"><div className="mBell">
                 <Badge badgeContent={4} color="primary" variant="dot">
-                    <Bell className="bellIcon" style={{ height: "25px", width: "25px", color: "blue" }}>
+                    <Bell className="bellIcon" style={{ height: "25px", width: "25px", color: "white" }}>
                     </Bell></Badge>
             </div></a>
-            <a href="#" className="mPost"><CreateIcon style={{ height: "23px", width: "23px", color: "blue" }} ></CreateIcon></a>
+            <a href="#" className="mPost"><CreateIcon style={{ height: "23px", width: "23px", color: "white" }} ></CreateIcon></a>
             <a href="#" className="toggle-button">
-                <Avatar alt='src' className="mAva" src={Profile} style={{ height: "35px", width: "35px" }}>H</Avatar>
+                <Avatar alt='src' className="mAva" src={Profile} style={{ height: "35px", width: "35px" }}>
+                </Avatar>
+                <div className="muldd">
+                    <li><a href="#" className="mhomedd"><HomeIcon></HomeIcon>Home</a></li>
+                    <li><a href="#"><PersonIcon></PersonIcon>View Profile</a> </li>
+                    <li><a href="#"><SettingsIcon></SettingsIcon>Setting</a></li>
+                    <li><a href="#" className="msignoutdd"><Logout></Logout>Signout</a></li>
+                </div>
             </a>
             <div className="navbar-links">
                 <ul>
@@ -80,14 +96,21 @@ const Header = (props) => {
                     </a></li>
                     <li><a href="#">
                         <div className="bell">
-                            <Badge badgeContent={4} color="primary">
-                                <Bell style={{ height: "35px", width: "35px", color: "blue" }}></Bell>
+                            <Badge badgeContent={4} style={{ color: "white" }}>
+                                <Bell style={{ height: "35px", width: "35px", color: "white" }}></Bell>
                             </Badge></div>
                     </a></li>
                     <li><a href="#"><button class="postBtn"><span>Create Post+</span></button></a></li>
                     <li><a href="#">
                         <div className='dropdown'>
-                            <Avatar alt='src' className="ava" src={Profile} style={{ height: "45px", width: "45px" }}>H</Avatar>
+                            <Avatar alt='src' className="ava" src={Profile} style={{ height: "45px", width: "45px" }}>
+                            </Avatar>
+                            <div className="uldd">
+                                <li><a href="#" className="homedd"><HomeIcon />Home</a></li>
+                                <li><a href="#"><PersonIcon />View profile</a> </li>
+                                <li><a href="#"><SettingsIcon />Setting</a> </li>
+                                <li><a href="#" className="signoutdd"><Logout />Singout</a> </li>
+                            </div>
                         </div>
                     </a></li>
                 </ul>
@@ -96,6 +119,8 @@ const Header = (props) => {
     )
 
 }
+
+
 
 export default Header;
 
