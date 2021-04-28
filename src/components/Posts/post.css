@@ -1,51 +1,69 @@
 
   .title{
     font-size: 18px;
-    margin-top: 120px;
-    padding-left: 20px;
+    margin-top: 0%;
+    margin-bottom: 1%;
+    margin-left: 85px;
+    /* padding-left: 20px; */
+    /* padding-top: 20px; */
+    font-family: 'Libre Baskerville', serif;
+    display: flex;
+
   }
   .des{
     padding-right: 10px;
     padding-left: 10px;
     padding-top: -100px;
     margin-top: 20px;
+    font-family: 'Questrial', sans-serif;
   }
   .card{
     display: "flex";
     justify-content: center;
     align-items: center;
-    background-color: rgb(141, 224, 245);
-    height: 500px;
-    width: 550px;
+    background-color: #fff;
+    height: 80vh;
+    /* width: 550px; */
+    width: 90%;
     border-radius: 10px;
     box-shadow: gainsboro;
     text-align: justify;
-  
-    margin-left: 500px;
+  /* margin-left: 500px; */
+  margin-left: 5%;
+  margin-right: 5%;
     margin-top: 20px;
-   
-    
-  }
+    border: rgb(167, 164, 164);
+    border-style: solid;
+    border-width: 1px;
+ }
+
+ .card:hover{
+  background-color: rgb(235, 235, 224);
+}
 
  .intro{
-   padding-left: 70px;
+   /* padding-left: 70px; */
    margin-top: 0px;
-   font-size: 14px;
+   margin-left: 85px ;
+   font-size: 12px;
+   font-family: 'Roboto', sans-serif;
+   display: flex;
  }
   .photo{
     padding-left: 5px;
     padding-bottom: 5px;
     height: 50px;
     width: 50px;
-    margin-right: 0px;
+    margin-right: 0;
     margin-bottom: -45px;
     border-radius: 100%;
+    margin-left:2%;
   }
   
   .card_img{
-    height: 350px;
-    padding: 40px;
-    width: 550px;
+    height: 70%;
+    padding: 10% 10%;
+    width: 100%;
     margin-top: -30px;
     margin-bottom: -30px;
     border-top-left-radius:10px ;
@@ -55,7 +73,7 @@
  
  
   .btn-5{
-    margin: 20px;
+    margin: 3%;
     width: 130px;
   height: 40px;
   color: #fff;
@@ -82,6 +100,7 @@
     border: none;
     background: rgb(255,27,0);
   background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
+  float: left;
   }
   .btn-5:hover {
     color: #f0094a;
@@ -115,18 +134,25 @@
     transition:800ms ease all;
   }
   .like{
-    padding-left: 250px;
+    float: right;
     position: relative;
-    top: -10px;
-    
+    /* top: -10% */
+    margin-top: 3%;
+    margin-right: 3%;
+   }
+  .btn-like{
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
   }
+
   @media (max-width: 800px) {
   
     .card{
       display: "flex";
       justify-content: center;
       align-items: center;
-      background-color: rgb(141, 224, 245);
+      background-color:#fff;
       height:450px;
       width: 100%;
       border-radius: 10px;
@@ -140,7 +166,7 @@
     }
     .card_img{
       height: 250px;
-      padding: 15px;
+      padding: 5%;
       width: 100%;
       margin-top: -30px;
       border-top-left-radius:10px ;
@@ -148,19 +174,53 @@
     
     }
     .like{
-      padding-left: 250px;
+      /* padding-left: 5%; */
+      
       position: relative;
-      top: -60px;
+      margin: 6%;
+      /* top: -60px; */
       
     }
-    /* .btn-5{
-     position: relative;
-     top: -20px;
-    } */
+    .btn-5{
+     margin: 6%;
+    }
    
 }
-@media (max-width: 400px){
+@media (max-width: 375px){
 .main{
   width: 100%;
 }
+
+.title{
+  font-size: 16px;
+  margin-top: 0%;
+  margin-bottom: 1%;
+  margin-left: 19%;
+  /* padding-left: 20px; */
+  /* padding-top: 20px; */
+  font-family: 'Libre Baskerville', serif;
+  display: flex;
+
 }
+
+.intro{
+  /* padding-left: 70px; */
+  margin-top: 0px;
+  margin-left: 19% ;
+  font-size: 11px;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+}
+
+.des{
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: -100px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-family: 'Questrial', sans-serif;
+  font-size: 15px;
+}
+
+}
+

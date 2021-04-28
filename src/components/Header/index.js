@@ -16,6 +16,8 @@ import HomeIcon from '@material-ui/icons/Home';
 import PersonIcon from '@material-ui/icons/Person';
 import SettingsIcon from '@material-ui/icons/Settings';
 import Logout from '@material-ui/icons/ExitToApp';
+import ClearIcon from '@material-ui/icons/Clear';
+import { NavLink } from 'react-router-dom';
 
 /**
 * @author
@@ -56,7 +58,7 @@ const Header = (props) => {
     return (
         <nav className="navbar">
             <div className="isaLogo">
-                <img src={(Isalogo)} alt="IsaLogo" />
+                <a href="https://isavesit.org.in/" target="_blank"><img src={(Isalogo)} alt="IsaLogo" /></a>
             </div>
             <div className='test'>
                 <h1>Alumini Hub</h1>
@@ -72,15 +74,16 @@ const Header = (props) => {
                     <Bell className="bellIcon" style={{ height: "25px", width: "25px", color: "white" }}>
                     </Bell></Badge>
             </div></a>
-            <a href="#" className="mPost"><CreateIcon style={{ height: "23px", width: "23px", color: "white" }} ></CreateIcon></a>
+            <NavLink to="/create-post"><a className="mPost"><CreateIcon style={{ height: "23px", width: "23px", color: "white" }} ></CreateIcon></a></NavLink>
             <a href="#" className="toggle-button">
                 <Avatar alt='src' className="mAva" src={Profile} style={{ height: "35px", width: "35px" }}>
                 </Avatar>
                 <div className="muldd">
                     <li><a href="#" className="mhomedd"><HomeIcon></HomeIcon>Home</a></li>
-                    <li><a href="#"><PersonIcon></PersonIcon>View Profile</a> </li>
-                    <li><a href="#"><SettingsIcon></SettingsIcon>Setting</a></li>
+                    <li><a href="#" className="msignoutdd"><PersonIcon></PersonIcon>View Profile</a> </li>
+                    <li><a href="#" className="msignoutdd"><SettingsIcon></SettingsIcon>Setting</a></li>
                     <li><a href="#" className="msignoutdd"><Logout></Logout>Signout</a></li>
+                    <li><a href="#" className="mexit"><ClearIcon></ClearIcon>Exit</a></li>
                 </div>
             </a>
             <div className="navbar-links">
@@ -100,7 +103,7 @@ const Header = (props) => {
                                 <Bell style={{ height: "35px", width: "35px", color: "white" }}></Bell>
                             </Badge></div>
                     </a></li>
-                    <li><a href="#"><button class="postBtn"><span>Create Post+</span></button></a></li>
+                    <li><NavLink to="/create-post"><button class="postBtn"><span>Create Post+</span></button></NavLink></li>
                     <li><a href="#">
                         <div className='dropdown'>
                             <Avatar alt='src' className="ava" src={Profile} style={{ height: "45px", width: "45px" }}>
@@ -125,15 +128,15 @@ const Header = (props) => {
 export default Header;
 
 // import React from 'react'
-// import { Container, Paper, Box, Typography, AppBar, Toolbar, Button } from "@material-ui/core";
-// import { makeStyles } from "@material-ui/core/styles";
-// import { Link } from 'react-router-dom';
+// import {Container, Paper, Box, Typography, AppBar, Toolbar, Button} from "@material-ui/core";
+// import {makeStyles} from "@material-ui/core/styles";
+// import {Link} from 'react-router-dom';
 // import Avatar from '@material-ui/core/Avatar';
 // import Isalogo from '../../assets/images/isaLogo.png';
 // import './style.css';
 // import Search from '../../assets/images/searchIcon.png';
-// // import { deepOrange, deepPurple } from '@material-ui/core/colors';
-// // import { makeStyles } from '@material-ui/core/styles';
+// // import {deepOrange, deepPurple} from '@material-ui/core/colors';
+// // import {makeStyles} from '@material-ui/core/styles';
 // import Input from '@material-ui/core/Input';
 // import InputLabel from '@material-ui/core/InputLabel';
 // import InputAdornment from '@material-ui/core/InputAdornment';

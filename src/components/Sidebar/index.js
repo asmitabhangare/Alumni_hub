@@ -8,8 +8,8 @@ import './style.css'
 
 const Sidebar = (props) => {
     return (
-        <div className="sidebarContainer">
-            Sidebar
+        <div>
+            <div className="sidebarTitle">Sidebar</div>
         </div>
     )
 

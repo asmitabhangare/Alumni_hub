@@ -1,5 +1,32 @@
 .bodyContainer{
+    display: 100%;
     display: flex;
     justify-content: space-between;
-    border-top: 10px solid white;   
+    /* border-top: 10px solid white;    */
+}
+.sidebarContainer{
+    width: 20%;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+    margin-top: 20px;
+    background: cornflowerblue;
+    height: 90vh;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 10px;
+    /* border: 2px solid red; */
+}
+.blogPostContainer{
+    width: 50%;
+}
+@media(max-width:500px){
+    .sidebarContainer{
+        display: none;
+    }
+    .blogPostContainer{
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
 }
