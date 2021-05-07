@@ -15,11 +15,14 @@ body{
   text-decoration: underline;
   margin-top: 20px;
   background: cornflowerblue;
-  height: 90vh;
+  height: 80vh;
   margin-left: 2%;
   margin-right: 2%;
   border-radius: 10px;
   /* border: 2px solid red; */
+  position: sticky;
+  top: 80px;
+  /* -webkit-position:sticky; */
 }
 .blogPostContainer{
   width: 50%;
