@@ -1,0 +1,70 @@
+.can{
+    height: 100%;
+    width: 38%;
+    margin: auto;
+    background-color: #fff;
+    
+}
+.hori{
+    width: 90%;
+    margin-top: 5%;
+    height: 6px;
+    background-color: rgb(167, 164, 164);
+    
+}
+.tagtitle{
+    text-align: left;
+    margin-left: 5%;
+}
+.column{
+    text-align: left;
+    margin-left: 8%;
+    
+}
+.column1{
+    text-align: left;
+    margin-left: 8%;
+}
+.tname{
+    text-align: left;
+    margin-left: 5%;
+    font-size: 22px;
+}
+.can1{
+    display: none;
+}
+@media (max-width: 800px){
+
+.can{
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background-color: #fff;
+    justify-content: center;
+    align-content: center;
+    
+}
+.column{
+    margin-left: 10%;
+}
+
+.hori{
+    width: 170%;
+    margin-top: 5%;
+    justify-content: center;
+    align-content: center;
+    height: 6px;
+    background-color: rgb(167, 164, 164);
+    
+}
+.tagtitle1{
+    text-align: left;
+    margin-left: 5%;
+}
+.tname{
+    text-align: left;
+    margin-left: 5%;
+    font-size: 20px;
+}
+}

@@ -14,6 +14,7 @@ function Mainpost() {
           photo = {Sdata[0].photo}
           msg = {Sdata[0].msg}
           intro = {Sdata[0].intro}
+          tag = {Sdata[0].tag}
           
           />
           <Cards imgname = {Sdata[1].imgname}
@@ -21,6 +22,7 @@ function Mainpost() {
           photo = {Sdata[1].photo}
           msg = {Sdata[1].msg}
           intro = {Sdata[1].intro}
+          tag = {Sdata[1].tag}
           />
 
           

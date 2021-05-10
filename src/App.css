@@ -5,27 +5,14 @@ body{
 .bodyContainer{
   display: 100%;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   /* border-top: 10px solid white;    */
 }
-.sidebarContainer{
-  width: 20%;
-  text-align: center;
-  font-size: 30px;
-  text-decoration: underline;
-  margin-top: 20px;
-  background: cornflowerblue;
-  height: 80vh;
-  margin-left: 2%;
-  margin-right: 2%;
-  border-radius: 10px;
-  /* border: 2px solid red; */
-  position: sticky;
-  top: 80px;
-  /* -webkit-position:sticky; */
-}
+
 .blogPostContainer{
-  width: 50%;
+  width: 70%;
+  margin: auto;
+
 }
 @media(max-width:500px){
   .sidebarContainer{

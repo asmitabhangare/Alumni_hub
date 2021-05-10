@@ -9,7 +9,7 @@ function Cards(props) {
     return (
         <>
 
-            <div className="main">
+          
                 <div className="card">
 
                     <img className="photo" src={props.photo} />
@@ -18,6 +18,9 @@ function Cards(props) {
                     <p className="des">
                         {props.msg}
                     </p>
+                    <span className="tags">
+              {props.tag}
+              </span>
                     <img src={props.imgname}
                         alt="myPic"
                         className="card_img" />
@@ -30,7 +33,7 @@ function Cards(props) {
                             />
                         </span></div>
                 </div>
-            </div>
+          
         </>
     )
 }
