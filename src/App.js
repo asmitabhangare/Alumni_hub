@@ -1,12 +1,9 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
-import Body from './containers/Body';
-import Mainpost from './components/Posts/mainpost';
 import Fullpost from './components/Posts/fullpost';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import CreatePost from './components/CreatePost';
-import Sidebar from './components/Sidebar';
 
 
 function App() {
