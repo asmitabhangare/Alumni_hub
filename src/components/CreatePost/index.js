@@ -48,15 +48,20 @@ const CreatePost = (props) => {
                         multiple
                         type="file"
                     />
+                    <div className="upload">
                     <label htmlFor="contained-button-file">
+                        
                         <Button variant="contained" color="primary" component="span">Upload</Button>
+                        
                     </label>
                     <input accept="image/*" className={classes.input} id="icon-button-file" type="file" />
                     <label htmlFor="icon-button-file">
                         <IconButton color="primary" aria-label="upload picture" component="span">
                             <PhotoCamera />
                         </IconButton>
+                        
                     </label>
+                    </div>
                 </div>
                 <NavLink to="/"><div className="buttonClass"><Button variant="contained" color="primary" disableElevation>Post</Button></div></NavLink>
 

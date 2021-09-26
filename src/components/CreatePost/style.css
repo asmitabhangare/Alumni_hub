@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Noto+Serif:wght@700&display=swap');
+:root{
+    --font1: 'Noto Serif', serif;
+    --font2: 'Arimo', sans-serif;
+}
 .createPostContainer{
     display: "flex";
     justify-content: center;
@@ -24,29 +30,34 @@
     display: flex;
     font-size: 2rem;
     justify-content: center;
+    font-family: var(--font1);
+    color: rgb(26, 22, 65);
 }
 .postHeading{
     display: flex;
     font-size: 1.2rem;
     margin-top: 1rem;
-    margin-left: 1rem;
+    margin-left: 60px;
+    font-family: var(--font2);
+    
 }
 .titleInput{
     margin-top: 1rem;
-    margin-left: 1rem;
+    margin-left: 60px;
     width: 80%;
     height: 2rem;
     font-size: 1rem;
 }
 .description{
+    font-family: var(--font2);
     display: flex;
     font-size: 1.2rem;
     margin-top: 1rem;
-    margin-left: 1rem;
+    margin-left: 60px;
 }
 .descriptionInput{
     margin-top: 1rem;
-    margin-left: 1rem;
+    margin-left: 60px;
     width: 80%;
     height: 10rem;
     font-size: 1rem;
@@ -59,7 +70,8 @@
     display: flex;
     font-size: 1.2rem;
     margin-top: 1rem;
-    margin-left: 1rem;
+    margin-left: 60px;
+    font-family: var(--font2);
 }
 
 .buttonClass{
@@ -67,8 +79,12 @@
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
+
     /* width: 50%; */
     /* height: 3rem; */
+}
+.upload{
+    margin-left: 60px;
 }
 .postButton{
     color: white;
@@ -80,5 +96,44 @@
     height: 2rem;
 }
 
-
+@media (max-width: 800px){
+    .upload{
+        margin-left: 40px;
+    }
+    .image{
+        margin-left: 40px;
+    }
+    .description{
+        margin-left: 40px;
+    }
+    .descriptionInput{
+        margin-left: 40px;
+    }
+    .postHeading{
+        margin-left: 40px;
+    }
+    .titleInput{
+        margin-left: 40px;
+    }
+}
+@media (max-width: 426px){
+    .upload{
+        margin-left: 30px;
+    }
+    .image{
+        margin-left: 30px;
+    }
+    .description{
+        margin-left: 30px;
+    }
+    .descriptionInput{
+        margin-left: 30px;
+    }
+    .postHeading{
+        margin-left: 30px;
+    }
+    .titleInput{
+        margin-left: 30px;
+    }
+}
 

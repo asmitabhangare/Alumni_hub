@@ -6,6 +6,7 @@ const tags = () => {
            <>
            <div className="can">
             <h1 className="tagtitle">Tags</h1>
+        
             <center><hr className="hori"></hr></center>
             <div className="column">
             <div><img className="domain" src="https://img.icons8.com/color/48/000000/python.png"/><span className="tname">Python</span></div>
